@@ -16,14 +16,12 @@ so the odds ratio of NOTCH1 mutation in non-durable_responders vs durable_respon
 SE{ln(OR)}= SQRT(1/5 + 1/4 + 1/7 + 1/38) = 0.786875
 
 
-2) 95% confidential interval (CI) calculation:
+3) 95% confidential interval (CI) calculation:
 
-95% CI for odds ratio = exp(ln(OR)-1.96*SE(ln(OR))) to exp(ln(OR)+1.96*SE(ln(OR)))
-where SE(ln(OR)) = SQRT (ABS (1/5 + 1/7 + 1/4 + 1/38) )
+95% CI = exp ( ln(OR) - 1.96 * SE{ln(OR)} ) to exp ( ln(OR) + 1.96 * SE{ln(OR)} )
 
 
-3) one-tailed/two-tailed p-value calculation:
+4) z statistic
 
-one-tailed p-value = HYPGEOM.DIST(5,12,9,54,TRUE)
-two-tailed p-value = HYPGEOM.DIST (5,12,9,54,TRUE)+1 - HYPGEOM.DIST(7,12,9,54,TRUE)
+A standard normal deviate (z-value) is calculated as ln(OR) / SE{ln(OR)}
 
