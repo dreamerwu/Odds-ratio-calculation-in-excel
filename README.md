@@ -12,6 +12,9 @@ total                         12                          42                    
 
 so the odds ratio of NOTCH1 mutation in non-durable_responders vs durable_responders is: OR = (5/7)/(4/38) = 6.7857
 
+2) The standard error of the log odds ratio being:
+SE{ln(OR)}= SQRT(1/5 + 1/4 + 1/7 + 1/38) = 0.786875
+
 
 2) 95% confidential interval (CI) calculation:
 
